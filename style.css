@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/bg-intro-mobile.png');
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+}
+
+header {
+    margin-top: 5.5rem;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    margin: 0 2.5rem;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin: 1rem 0.8rem 2rem;
+}
+
+.blue-btn {
+    text-align: center;
+}
+
+.btn {
+    width: 85%;
+    margin: 1.5rem 1.5rem;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(246, 25%, 77%);
+    border: 0;
+    padding: 15px 60px;
+    border-radius: 8px;
+    box-shadow: 0 5px 0px 0px rgba(0, 0, 0, 0.205);
+}
+
+.btn span {
+    color: white;
+    font-weight: bold;
+}
+
+#my-form {
+    text-align: center;
+    background-color: white;
+    margin: 0 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 0px 0px rgba(0, 0, 0, 0.205);
+}
+
+#my-form input {
+    width: 85%;
+    margin-top: 1rem;
+    padding: 15px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#my-form button {
+    width: 85%;
+    background-color: hsl(154, 59%, 51%);
+    color: rgba(255, 255, 255, 0.819);
+    text-transform: uppercase;
+    border: none;
+    margin-top: 1rem;
+    padding: 15px 60px;
+    border-radius: 5px;
+    box-shadow: 0 3px 0px 0px hsla(154, 55%, 32%, 0.705);
+}
+
+#my-form p {
+    padding-bottom: 1.5rem;
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    line-height: normal;
+    width: 90%;
+}
+
+#my-form p span {
+    color: hsl(0, 100%, 74%);
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        background-image: none;
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content,
+    .form {
+        margin: 7rem 0;
+    }
+    header {
+        text-align: left;
+        margin: 10rem 0 0 5rem;
+    }
+    p {
+        width: 95%;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .content {
+        margin: 7rem 0.5rem 8rem 3rem;
+    }
+    .form {
+        margin: 8rem 6rem 8rem 0rem;
+    }
+    header h2 {
+        width: 65%;
+    }
+    header P {
+        width: 90%;
+    }
+    .btn {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+    .content {
+        margin: 7rem 0.5rem 8rem 3rem;
+    }
+    .form {
+        margin: 8rem 6rem 8rem 0rem;
+    }
+    header h2 {
+        letter-spacing: 2px;
+        font-size: 2.3rem;
+        width: 65%;
+    }
+    header P {
+        font-size: 1.1rem;
+        width: 95%;
+    }
+}
