@@ -17,7 +17,7 @@ header {
     color: white;
 }
 
-h3 {
+h2 {
     margin: 0 2.5rem;
 }
 
@@ -120,6 +120,7 @@ p {
         margin: 8rem 6rem 8rem 0rem;
     }
     header h2 {
+        margin: 0;
         width: 65%;
     }
     header P {
@@ -138,6 +139,8 @@ p {
         margin: 8rem 6rem 8rem 0rem;
     }
     header h2 {
+        margin: 0;
+        text-align: left;
         letter-spacing: 2px;
         font-size: 2.3rem;
         width: 65%;
