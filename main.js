@@ -58,20 +58,45 @@
 
 function validateFirstName() {
     var firstname = document.getElementById("firstNameError");
-    firstname.innerHTML = "first name cannot be empty";
+    firstname.innerHTML = "First name cannot be empty";
+    event.preventDefault()
 }
 
 function validateLastName() {
     var lastname = document.getElementById("lastNameError");
-    lastname.innerHTML = "last name cannot be empty";
+    lastname.innerHTML = "Last name cannot be empty";
 }
 
 function validateEmail() {
     var email = document.getElementById("emailError");
-    email.innerHTML = "looks like this is not an email";
+    email.innerHTML = "Looks like this is not an email";
 }
 
 function validatePassword() {
     var password = document.getElementById("passwordError");
-    password.innerHTML = "password cannot be empty";
+    password.innerHTML = "Password cannot be empty";
+}
+// border color
+
+function firstNameBorder() {
+    var fnameBorder = document.getElementById("firstName");
+    fnameBorder.style.borderColor = "hsl(0, 100%, 74%)";
+}
+
+
+function lastNameBorder() {
+    var lnameBorder = document.getElementById("lastName");
+    lnameBorder.style.borderColor = "hsl(0, 100%, 74%)";
+}
+
+
+function emailBorder() {
+    var mailBorder = document.getElementById("email");
+    mailBorder.style.borderColor = "hsl(0, 100%, 74%)";
+}
+
+
+function passwordBorder() {
+    var passwordBorder = document.getElementById("password");
+    passwordBorder.style.borderColor = "hsl(0, 100%, 74%)";
 }

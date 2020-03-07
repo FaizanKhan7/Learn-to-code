@@ -25,15 +25,15 @@
                 <button class="btn"><span>Try it free 7 days</span> then $20 /mo. thereafter</button>
             </div>
             <form id="my-form">
-                <input id="first-name" type="text" name="first-name" placeholder="First Name">
+                <input id="firstName" type="text" name="first-name" placeholder="First Name">
                 <h6 id="firstNameError"></h6>
-                <input id="last-name" type="text" name="last-name" placeholder="Last Name">
+                <input id="lastName" type="text" name="last-name" placeholder="Last Name">
                 <h6 id="lastNameError"></h6>
                 <input id="email" type="Email" placeholder="Email Address">
                 <h6 id="emailError"></h6>
                 <input id="password" type="password" name="password" placeholder="Password">
                 <h6 id="passwordError"></h6>
-                <button id="submitButton" onclick="validateFirstName(), validateLastName(), validateEmail(), validatePassword()">Claim your free trial</button>
+                <button id="submitButton" onclick="validateFirstName(), validateLastName(), validateEmail(), validatePassword(), firstNameBorder(),lastNameBorder(), emailBorder(),passwordBorder()">Claim your free trial</button>
                 <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
             </form>
         </div>
