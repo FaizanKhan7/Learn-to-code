@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>DOM - CSS</title>
+
+    <script defer src="main.js"></script>
+    <!--we use the defer keyword so that it loads the js after the body-->
 </head>
 
 <body>
@@ -22,15 +25,20 @@
                 <button class="btn"><span>Try it free 7 days</span> then $20 /mo. thereafter</button>
             </div>
             <form id="my-form">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="Email" placeholder="Email Address">
-                <input type="text" placeholder="Password">
-                <button>Claim your free trial</button>
+                <input id="first-name" type="text" name="first-name" placeholder="First Name">
+                <h6 id="firstNameError"></h6>
+                <input id="last-name" type="text" name="last-name" placeholder="Last Name">
+                <h6 id="lastNameError"></h6>
+                <input id="email" type="Email" placeholder="Email Address">
+                <h6 id="emailError"></h6>
+                <input id="password" type="password" name="password" placeholder="Password">
+                <h6 id="passwordError"></h6>
+                <button id="submitButton" onclick="validateFirstName(), validateLastName(), validateEmail(), validatePassword()">Claim your free trial</button>
                 <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
             </form>
         </div>
     </div>
+
 </body>
 
 </html>
