@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <title>DOM - CSS</title>
 
     <script defer src="main.js"></script>
@@ -17,28 +17,36 @@
         <div class="content">
             <header>
                 <h2>Learn to code by watching others</h2>
-                <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+                <p>
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+                </p>
             </header>
         </div>
         <div class="form">
             <div class="blue-btn">
-                <button class="btn"><span>Try it free 7 days</span> then $20 /mo. thereafter</button>
+                <button class="btn">
+            <span>Try it free 7 days</span> then $20 /mo. thereafter
+          </button>
             </div>
-            <form id="my-form">
-                <input id="firstName" type="text" name="first-name" placeholder="First Name">
+            <form id="my-form" name="form">
+                <input id="firstName" type="text" name="firstname" placeholder="First Name" value="" />
                 <h6 id="firstNameError"></h6>
-                <input id="lastName" type="text" name="last-name" placeholder="Last Name">
+                <input id="lastName" type="text" name="lastname" placeholder="Last Name" value="" />
                 <h6 id="lastNameError"></h6>
-                <input id="email" type="Email" placeholder="Email Address">
+                <input id="email" type="Email" name="email" placeholder="Email Address" value="" />
                 <h6 id="emailError"></h6>
-                <input id="password" type="password" name="password" placeholder="Password">
+                <input id="password" type="password" name="password" placeholder="Password" value="" />
                 <h6 id="passwordError"></h6>
-                <button id="submitButton" onclick="validateFirstName(), validateLastName(), validateEmail(), validatePassword(), firstNameBorder(),lastNameBorder(), emailBorder(),passwordBorder()">Claim your free trial</button>
-                <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+                <button type="submit" onclick="validateFirstName(), validateLastName(), validateEmail(), validatePassword()">
+            Claim your free trial
+          </button>
+                <p>
+                    By clicking the button, you are agreeing to our
+                    <span>Terms and Services</span>
+                </p>
             </form>
         </div>
     </div>
-
 </body>
 
 </html>
